@@ -1,4 +1,1 @@
-[
-  { "descripcion": "Aprender react", "completado": false },
-  { "descripcion": "Aprender html", "completado": false }
-]
+[{"descripcion":"Aprender react","completado":true},{"descripcion":"Aprender html","completado":false}]

@@ -32,7 +32,9 @@ const getListado = () => {
 };
 const actualizar = (descripcion, completado = false) => {
   cargarDb();
-  let index = listadoPorHacer.findIndex(tarea.descripcion === descripcion);
+  let index = listadoPorHacer.findIndex(
+    (tarea) => tarea.descripcion === descripcion
+  );
   if (index >= 0) {
     listadoPorHacer[index].completado = completado;
     guardarDB();
@@ -43,7 +45,9 @@ const actualizar = (descripcion, completado = false) => {
 };
 const borrar = (descripcion) => {
   cargarDb();
-  let index = listadoPorHacer.findIndex(tarea.descripcion === descripcion);
+  let index = listadoPorHacer.findIndex(
+    (tarea) => tarea.descripcion === descripcion
+  );
   if (index >= 0) {
     listadoPorHacer.splice(index, 1);
     guardarDB();

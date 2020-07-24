@@ -24,7 +24,10 @@ switch (comando) {
     break;
   }
   case "actualizar": {
-    let actualizado = porHacer.actualizar(argv.description, argv.completado);
+    let actualizado = porHacer.actualizar(
+      argv.description,
+      argv.completado === "true"
+    );
     console.log(actualizado);
     break;
   }

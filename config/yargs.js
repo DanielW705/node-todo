@@ -7,6 +7,7 @@ const completado = {
   default: false,
   alias: "c",
   desc: "Marca como completado o pendiente la tarea",
+  
 };
 const argv = require("yargs")
   .command("listar", "Lista los todo")
