@@ -2,12 +2,13 @@ const description = {
   demand: true,
   alias: "d",
   desc: "Descripcion de la tarea que hay por hacer",
+  type: "string",
 };
 const completado = {
   default: false,
   alias: "c",
   desc: "Marca como completado o pendiente la tarea",
-  
+  type: "boolean",
 };
 const argv = require("yargs")
   .command("listar", "Lista los todo")
